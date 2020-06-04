@@ -1,0 +1,98 @@
+body{background-image: url(back.jpg);} 
+/* для селектора body применяеться фоновое изображение */
+.body
+{ /*селектор класса для второстепенных страниц сайта  */
+	backdrop-filter: blur(3px); /* размытие заднего фона  */
+	-webkit-backdrop-filter: blur(3px); /*использование префиксов для браузеров старых версий Chrome */
+	-ms-backdrop-filter: blur(3px); /* IE, Safari */
+	-moz-backdrop-filter: blur(3px); /* Firefox */
+	margin: 0; /* внешнее поле */
+	padding: 0; /* внутрений отступ */
+}
+
+nav 
+{
+	width: 1200px; /* ширина блока nav */
+	height: 300px; /* высота блока nav */
+	font-size: 250%; /* размер шрифта в % от родительского значения */
+	margin: 200px 200px; /* верхне/нижнее и левое/правое поле */
+	text-align: center; /* выравнивания текста по центру */
+	line-height: 180%; /* высота строки (межстрочный интервал) */
+}
+
+nav a{color: #FFF70A;} /* применение цвета елемента (текста) для ссылок в блоке nav*/
+
+a{text-decoration: none;} /* удаление нижнего подчеркивания для всех ссылок на сайте */
+
+a:hover /* псевдокласс для ссылок который срабатывает в момент наведения мышью */
+{
+	font-size: 130%;
+	color: red;
+	font-weight: bold; /* полужирний текст */
+	cursor: pointer; /* курсор мыши в виде руки */
+	filter: drop-shadow(4px 4px black); /* применение черной тени для текста */
+	-webkit-filter: drop-shadow(4px 4px black);
+	-ms-filter: drop-shadow(4px 4px black);
+	-moz-filter: drop-shadow(4px 4px black);
+	transition: all 0.3s ease; /* замедление всех эффектов переходов на протяжении 0,3 сек за временной функией ease */
+	-webkit-transition: all 0.3s ease;
+	-ms-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+}
+
+h1 /* селектор заголовков первого уровня */
+{
+	font-size: 300%;
+	font-family: Arial, sans-serif; /* установка семейства шрифта Arial и и резервный sans-serif (без засечек который присутствует на устройстве) в случае сбоя работы Arial */
+	text-align: center;
+	color: #05FFE2;
+	filter: drop-shadow(3px 3px red);
+	-webkit-filter: drop-shadow(3px 3px red);
+	-ms-filter: drop-shadow(3px 3px red);
+	-moz-filter: drop-shadow(3px 3px red);
+	margin: 0;
+}
+
+main
+{
+	margin: 10px 100px;
+	text-align: justify; /* выравнивание по ширине */
+	font-size: 150%;
+	color: #FFF70A;
+}
+
+footer
+{
+	margin-top: 288px; /* только верхнее поле */
+	margin-bottom:0; /* полько нижнее поле */
+	text-align: center;
+	font-weight: bold;
+	font-size: 150%;
+	color: red;
+}
+
+span{color: #33FF00;}
+
+.p{color: #E5FF00;} /* селектор класса */
+
+main p {text-indent: 20px;} /* абзацний отступ (красная строка) */
+
+form
+{
+	width: 550px;
+	height: 700px;
+	margin-left: 500px; /* левое поле */
+}
+
+form p 
+{
+	font-size: 150%;
+	text-align: center;
+}
+
+input
+{
+	margin-left: 180px;
+	margin-top: 10px;
+	margin-bottom: 10px;  
+}
